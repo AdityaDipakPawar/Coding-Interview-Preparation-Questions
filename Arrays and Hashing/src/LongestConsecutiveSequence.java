@@ -38,7 +38,6 @@ public class LongestConsecutiveSequence {
         ArrayList<Integer> keys = new ArrayList<>(map.keySet());
 
         int maxLength = 0;
-        int maxStarting = 0;
 
         for (int key: keys) {
 
@@ -51,7 +50,6 @@ public class LongestConsecutiveSequence {
 
                 if (count > maxLength) {
                     maxLength = count;
-                    maxStarting = key;
                 }
             }
         }
